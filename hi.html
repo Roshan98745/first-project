@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Roshan Adhikari's Digital Marketing Portfolio">
+    <title>My Portfolio | Roshan Adhikari</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="hello.html">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Roshan Adhikari</h1>
+            <p>Digital Marketer | To increase your brand Visibility</p>
+            <nav>
+                <ul>
+                    <li><a href="#about" aria-label="About Me">About Me</a></li>
+                    <!-- Change the href to redirect to hello.html when clicked -->
+                    <li><a href="hello.html" aria-label="My Projects">Projects</a></li>
+                    <li><a href="#screenshots" aria-label="My Screenshots">Screenshots</a></li>
+                    <li><a href="#contact" aria-label="Contact Me">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" aria-labelledby="about-title">
+        <div class="container">
+            <h2 id="about-title">About Me</h2>
+            <img src="images/project2.jpg" alt="photo" class="project-img">
+            <p>Hi, I'm Roshan Adhikari, a passionate Digital Marketer committed to enhancing the visibility of your brand and driving impactful marketing strategies.</p>
+            <p style="text-align-last: right;">Roshan Adhikari</p>
+        </div>
+    </section>
+
+   
+    <!-- Projects Section -->
+<section id="projects" aria-labelledby="projects-title">
+    <div class="container">
+        <h2 id="projects-title">Web Studio Nepal</h2>
+
+        <!-- First Project Card, wrapped in <a> tag -->
+        <a href="hello.html" class="project-link">
+            <div class="project-card">
+                <picture>
+                    <source srcset="images/project1-small.jpg" media="(max-width: 768px)">
+                   
+                <h3>Project 1: Digital Marketing Strategy</h3>
+                <p>This project involved creating a comprehensive SEO strategy for a local business, helping increase their online presence and sales.</p>
+            </div>
+        </a>
+
+        <!-- Second Project Card, wrapped in <a> tag -->
+        <a href="hello.html" class="project-link">
+            <div class="project-card">
+                <picture>
+                    <source srcset="images/project2-small.jpg" media="(max-width: 768px)">
+                    
+                <h3>Project 2: Social Media Campaign</h3>
+                <p>A campaign designed to grow social media engagement and build brand loyalty through targeted content creation and social media ads.</p>
+            </div>
+        </a>
+
+        <!-- Add more project cards as needed, following the same structure -->
+
+    </div>
+</section>
+
+   
+
+    
+
+    <!-- Contact Section -->
+    <section id="contact" aria-labelledby="contact-title">
+        <div class="container">
+            <h2 id="contact-title">Contact Me</h2>
+            <p>Feel free to reach out to me at <a href="mailto:roshanadhikari640@gmail.com" aria-label="Send an email to Roshan">roshanadhikari640@gmail.com</a>.</p>
+            <div>
+                <a href="https://www.linkedin.com/in/roshan-adhikari-b92916327/" target="_blank" aria-label="Roshan Adhikari's LinkedIn Profile">
+                    <img src="images/linkdin.png" alt="LinkedIn Icon" class="social-icon" style="width: 40px; height: 30px; margin-right: 10px;">
+                </a>
+                <a href="https://www.youtube.com/@beastgamingnp7783" target="_blank" aria-label="Roshan Adhikari's Youtube Channel">
+                    <img src="images/youtube.png" alt="Youtube Icon" class="social-icon" style="width: 40px; height: 30px;">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Roshan Adhikari. All Rights Reserved. | <a href="#about" aria-label="Back to top">Back to top</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

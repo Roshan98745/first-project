@@ -60,6 +60,23 @@ nav ul li a {
     transition: color 0.3s ease, transform 0.3s ease;
 }
 /*nav bar css*/
+/* Container for the circle image */
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* The circular image styling */
+.circle-img {
+    width: 150px;         /* Set the width of the image */
+    height: 150px;        /* Set the height of the image */
+    border-radius: 50%;   /* Make the image round */
+    object-fit: cover;    /* Ensures the image covers the circle without distortion */
+    border: 3px solid #fff;  /* Optional: Adds a border around the image */
+}
+
 /* Contact Section */
 #contact {
     background-color: #fff;

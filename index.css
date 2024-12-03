@@ -60,6 +60,7 @@ nav ul li a {
     font-weight: 500;
     transition: color 0.3s ease, transform 0.3s ease;
 }
+/*nav bar css*/
 
 nav ul li a:hover {
     color: #f1f1f1;

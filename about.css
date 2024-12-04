@@ -60,12 +60,19 @@ nav ul li a {
     transition: color 0.3s ease, transform 0.3s ease;
 }
 /*nav bar css*/
-/* Container for the circle image */
-.circle-container {
+/* Container for about section */
+.about-container {
+    display: flex; /* Use flexbox to arrange items side by side */
+    justify-content: space-between; /* Add space between the containers */
+    align-items: center; /* Vertically center the content */
+    margin-top: 100px; /* Adjust top margin for spacing */
+}
+
+/* Container for photo and name */
+.photo-container {
     display: flex;
-    justify-content: left;
-    align-items: left;
-    margin-top: 100px;
+    flex-direction: column; /* Stack the image and name vertically */
+    align-items: center; /* Center items horizontally */
 }
 
 /* The circular image styling */
@@ -76,11 +83,33 @@ nav ul li a {
     object-fit: cover;    /* Ensures the image covers the circle without distortion */
     border: 3px solid #fff;  /* Optional: Adds a border around the image */
 }
-.container {
-    width: 90%; /* 90% of the screen width */
-    max-width: 1200px; /* Max width of 1200px for larger screens */
-    margin: 0 auto;
+
+/* Styling for the name */
+.name {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
 }
+
+/* Container for the description */
+.description-container {
+    max-width: 600px; /* Limit the width of the description container */
+    padding-left: 20px; /* Add some space on the left */
+}
+
+/* Styling for the description */
+.description-container h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.description-container p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
 
 
 /* Contact Section */

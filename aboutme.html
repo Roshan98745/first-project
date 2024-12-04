@@ -1,4 +1,4 @@
-<!--About Me -->
+<!-- About Me Page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,20 +8,17 @@
     <title>My Portfolio | Roshan Adhikari</title>
     <link rel="stylesheet" href="about.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="hello.html">
-    <link rel="stylesheet" href="aboutme.html">
 </head>
 <body>
     <header>
         <div class="container">
             <h1>Roshan Adhikari</h1>
-            <p>Digital Marketor | Increase your brand Visibility</p>
+            <p>Digital Marketer | Increase your brand Visibility</p>
             <nav>
                 <ul>
                     <li><a href="aboutme.html" aria-label="About Me">About Me</a></li>
-                    <!-- Change the href to redirect to hello.html when clicked -->
                     <li><a href="hello.html" aria-label="My Projects">Projects</a></li>
-                    <li><a href="hi.html" aria-label="Contact Me">home</a></li>
+                    <li><a href="hi.html" aria-label="Home">Home</a></li>
                     <li><a href="#contact" aria-label="Contact Me">Contact</a></li>
                 </ul>
             </nav>
@@ -44,48 +41,46 @@
         </div>
     </section>
     
-
- 
-    
- <!-- Contact Section -->
- <section id="contact" aria-labelledby="contact-title">
-    <div class="container">
-        <h2 id="contact-title">Contact Me</h2>
-      
-        <div>
-            <a href="https://www.linkedin.com/in/roshan-adhikari-b92916327/" target="_blank" aria-label="Roshan Adhikari's LinkedIn Profile">
-                <img src="images/linkdin.png" alt="LinkedIn Icon" class="social-icon" style="width: 40px; height: 30px; margin-right: 10px;">
-            </a>
-            <a href="https://www.youtube.com/@beastgamingnp7783" target="_blank" aria-label="Roshan Adhikari's Youtube Channel">
-                <img src="images/youtube.png" alt="Youtube Icon" class="social-icon" style="width: 40px; height: 30px;">
-            </a>
-            <a href="https://github.com/Roshan98745" target="_blank" aria-label="Roshan Adhikari's Github">
-                <img src="images/github.png" alt="github icon" class="social-icon" style="width: 40px; height: 30px;">
-            </a>
-            <a href="mailto:roshanadhikari640@gmail.com" target="_blank" aria-label="Send an email to Roshan Adhikari"><img src="images/mail.png" alt="Mail icon" class="social-icon" style="width: 40px; height: 30px;"></a>
-            </a>
+      <!-- Contact Section -->
+      <section id="contact" aria-labelledby="contact-title">
+        <div class="container">
+            <h2 id="contact-title">Contact Me</h2>
+          
+            <div>
+                <a href="https://www.linkedin.com/in/roshan-adhikari-b92916327/" target="_blank" aria-label="Roshan Adhikari's LinkedIn Profile">
+                    <img src="images/linkdin.png" alt="LinkedIn Icon" class="social-icon" style="width: 40px; height: 30px; margin-right: 10px;">
+                </a>
+                <a href="https://www.youtube.com/@beastgamingnp7783" target="_blank" aria-label="Roshan Adhikari's Youtube Channel">
+                    <img src="images/youtube.png" alt="Youtube Icon" class="social-icon" style="width: 40px; height: 30px;">
+                </a>
+                <a href="https://github.com/Roshan98745" target="_blank" aria-label="Roshan Adhikari's Github">
+                    <img src="images/github.png" alt="github icon" class="social-icon" style="width: 40px; height: 30px;">
+                </a>
+                <a href="mailto:roshan@example.com" target="_blank" aria-label="Send an email to Roshan Adhikari"><img src="images/mail.png" alt="Mail icon" class="social-icon" style="width: 40px; height: 30px;"></a>
+                    
+                </a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Roshan Adhikari. All Rights Reserved. | <a href="#about" aria-label="Back to top">Back to top</a></p>
+        </div>
+    </footer>
 
-<!-- Footer Section -->
-<footer>
-    <div class="container">
-        <p>&copy; 2024 Roshan Adhikari. All Rights Reserved. | <a href="#about" aria-label="Back to top">Back to top</a></p>
-    </div>
-</footer>
-
-<script>
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
             });
         });
-    });
-</script>
+    </script>
 </body>
 </html>
+

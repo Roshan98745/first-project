@@ -59,13 +59,15 @@ nav ul li a {
     font-weight: 500;
     transition: color 0.3s ease, transform 0.3s ease;
 }
-/*nav bar css*/
+
 /* Container for about section */
 .about-container {
     display: flex; /* Use flexbox to arrange items side by side */
-    justify-content: space-between; /* Add space between the containers */
+    justify-content: center; /* Center the content horizontally */
     align-items: center; /* Vertically center the content */
     margin-top: 100px; /* Adjust top margin for spacing */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px; /* Add space between the items */
 }
 
 /* Container for photo and name */
@@ -88,7 +90,6 @@ nav ul li a {
 .name {
     color: black;
     font-size: 20px;
-    text-align: center;
     margin-top: 10px;
 }
 
@@ -96,6 +97,10 @@ nav ul li a {
 .description-container {
     max-width: 600px; /* Limit the width of the description container */
     padding-left: 20px; /* Add some space on the left */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Ensure the text is aligned to the left */
 }
 
 /* Styling for the description */
@@ -110,14 +115,11 @@ nav ul li a {
     color: #555;
 }
 
-
-
 /* Contact Section */
 #contact {
     background-color: #fff;
     text-align: center;
     padding-bottom: 50px;
-    
 }
 
 #contact p {
@@ -168,4 +170,77 @@ footer p {
         width: 100%;
         height: auto;
     }
+
+    .about-container {
+        flex-direction: column; /* Stack the sections vertically on smaller screens */
+        align-items: center;
+    }
+
+    .description-container {
+        padding-left: 0; /* Remove left padding on smaller screens */
+        text-align: center; /* Center align text for smaller screens */
+    }
 }
+
+/* Smooth Scrolling for Anchor Links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Minor Styling Enhancements */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/* Basic styling for the screenshots section */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.screenshot-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.screenshot-box {
+    position: relative;
+    width: 30%;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.screenshot-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.screenshot-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Fullscreen modal styling */
+.fullscreen-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.fullscreen-img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+

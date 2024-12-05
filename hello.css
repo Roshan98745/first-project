@@ -64,6 +64,7 @@ nav ul li a {
     transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
+
 /* Screenshot Gallery Styles */
 .screenshot-box {
     display: flex;

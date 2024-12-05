@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 60px; /* To avoid header covering content */
+}
+
+/* Header Section */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.screenshot-img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Screenshot Gallery Styles */
+.screenshot-box {
+    display: flex;
+    flex-direction:column;
+    /*flex: 1 1 calc(30% - 20px); /* 3 items per row with smaller width (30%) */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.screenshot-box img {
+    
+    width: 80%;
+    padding: 5;
+    height: auto;
+    display: block;
+    align-content: center;
+    margin: 10px;
+    margin-top: 10opx;
+    margin-right: 10px;
+    margin-bottom: 10ox;
+    margin-left: 10pox;
+}
+
+
+/* Make the gallery responsive */
+@media (max-width: 480px) {
+    .screenshot-box {
+        flex: 1 1 calc(30% - 20px); /* 3 items per row on medium screens with smaller width */
+    }
+}
+
+@media (max-width: 480px) {
+    .screenshot-box {
+        flex: 1 1 100%; /* 1 item per row on mobile */
+    }
+}

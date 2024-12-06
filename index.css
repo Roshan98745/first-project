@@ -118,11 +118,7 @@ p {
     transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
 
-.screenshot-box:hover {
-    background-color: #e0e0e0; /* Change background color on hover */
-    transform: scale(1.05); /* Slightly enlarge the box on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for effect */
-}
+
 
 .project-card:hover {
     transform: translateY(-10px); /* Lift effect on hover */
